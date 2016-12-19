@@ -133,12 +133,21 @@ Github:         // 所提交资源的Github地址
 * [iconfont](http://www.iconfont.cn)
 
 ### 开发
-
+安装
 ```
-npm install
+npm install 推荐使用 cnpm install
 ```
+打包
 ```
-webpack -p
+npm run build 即 webpack -p 
+```
+清除
+```
+npm run clean 即 rm index.html && rm -rf dist
+```
+重新打包
+```
+npm run rebuild 即 npm run clean && npm run build
 ```
 
 ### 搜索高亮

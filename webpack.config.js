@@ -14,10 +14,10 @@ module.exports = {
     },
     output: {
         path: './dist',
-        filename: '[name].[chunkhash:8].js'
+        filename: '[name].js?[chunkhash:8]'
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('lib', 'lib.[chunkhash:8].js'),
+        new webpack.optimize.CommonsChunkPlugin('lib', 'lib.js?[chunkhash:8]'),
         new HtmlPlugin({
             // html模板文件
             template: './src/index.html',
@@ -28,7 +28,7 @@ module.exports = {
             // script插入的标签
             inject: 'body'
         }),
-        new ExtractTextPlugin('[name].[contenthash:8].css'),
+        new ExtractTextPlugin('[name].css?[contenthash:8]'),
         // 配置生产环境
         new webpack.DefinePlugin({
             'process.env': {
