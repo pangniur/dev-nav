@@ -11,7 +11,7 @@ var dev_nav = new Vue({
             github: 'https://github.com/mcc108/dev-nav'
         },
         data: {},
-        favicon: 'http://api.byi.pw/favicon/?url=',
+        favicon: 'https://api.byi.pw/favicon/?url=',
         baidu: 'https://www.baidu.com/s?wd=',
         google: 'https://www.google.com/#q=',
         search: {
